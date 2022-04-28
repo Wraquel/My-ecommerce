@@ -21,6 +21,7 @@ h2{ margin-bottom: 15px;
     font-weight: 500;
     font-size:  46px;
     line-height: 1.3;
+    letter-spacing: 5px;
 }
 h4{
     font-size:  20px;
@@ -50,8 +51,7 @@ button, i, a {
 .alternate {
     border: none;
     background: transparent;
-    color: whitesmoke;
-   
+    color: whitesmoke;  
     font-size: 30px;
     letter-spacing: 7px;
     margin-bottom: 5px;
@@ -129,7 +129,9 @@ button, i, a {
      justify-content: center ;
      flex-direction: column;
 }
-
+#hero .classic{
+    background-color: #DD8470;
+}
 #hero h4 {
     padding-bottom: 15px;     
 }
@@ -140,7 +142,6 @@ button, i, a {
 
 /* SUMMER BANNER page */
 #summer {
-    margin: 40px auto 40px;
     display: flex;
     justify-content: center;
 }
@@ -162,6 +163,7 @@ button, i, a {
 
 /* PRODUCTS page */
 .material {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,11 +199,16 @@ span {
 }
 
 /* MORE BANNER page  */
+#other-products {
+    text-align: center;
+}
 #more{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 45px;
 }
+
 .more-products {
     display: flex;
     justify-content: center;
@@ -276,9 +283,10 @@ footer .links {
 
 footer .col p{
    margin-top: 6px;
+    font-size: 17px;
 }
 footer .col h4{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .follow{
     margin-top: 20px;
@@ -287,12 +295,12 @@ footer .follow h4{
     margin-bottom: 5px;
 }
 footer .col a{
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     text-decoration: none;
     margin-bottom: 15px;
 }
-footer .copyright{
+footer .copyright p{
     font-size: 16px;
     text-align: center;
     margin-top: 40px;
