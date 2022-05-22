@@ -24,7 +24,10 @@ h2{ margin-bottom: 15px;
     letter-spacing: 5px;
 }
 h4{
-    font-size:  20px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    font-size:  27px;
 }
 
 h6{
@@ -129,6 +132,14 @@ button, i, a {
      justify-content: center ;
      flex-direction: column;
 }
+#shop-hero{
+    background: url("images/hero-shop.png") no-repeat center;
+     height: 40vh;
+     display: flex;
+     align-items: center;
+     justify-content: center ;
+     flex-direction: column;
+}
 #hero .classic{
     background-color: #DD8470;
 }
@@ -140,6 +151,43 @@ button, i, a {
     color: #DD8470;
 }
 
+/* --------------------------->    SINGULAR PRODUCTS PAGE */
+
+#prodetails {
+    display: flex;
+}
+
+.small-img{
+    width: 100%;
+    margin: auto 5px auto;
+  
+}
+.single-mat-details{
+   text-align: justify;
+}
+#prodetails .single-mat-details select{
+    border-radius: 0;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    height: 30px;
+}
+
+#prodetails .single-mat-details input{
+    border: 1px solid;
+    width: 50px;
+    height: 43px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin:  15px 10px 15px auto;
+}
+#prodetails .single-mat-details input:focus, select:focus{
+    outline: none;
+}
+
+.single-mat-details p{
+    letter-spacing: 5px;
+}
 /* SUMMER BANNER page */
 #summer {
     display: flex;
@@ -171,11 +219,14 @@ button, i, a {
     flex-wrap: wrap;
 }
 
-#product1{
+#products{
     text-align: center;
 }
+#products img:hover{
+    cursor: pointer;
+}
 
-#product1 .products{
+#products .product{
    margin: 20px;
 }
 
@@ -226,7 +277,14 @@ span {
     position: absolute;
  
 }
+/*dssddsdsds*/
 
+#pagination {text-align: center;}
+#pagination a{
+    text-decoration: none;
+    background-color: #DD8470;
+    padding: 10px 15px;
+}
 /* BANNER NEWSLETTER */
 #banner-newsletter {
     color: #764B36;
