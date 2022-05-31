@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Glacial Indifference", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 body {
-  color: #764b36;
+  color: #292929;
   width: 100%;
-  background: whitesmoke;
+
 }
 
 h1 {
@@ -40,7 +40,6 @@ h6 {
 p {
   font-size: 18px;
   margin: 0px 0 20px 0;
-  font-family: "Montserrat", sans-serif;
 }
 
 button,
@@ -54,7 +53,7 @@ a {
   text-decoration: none;
 }
 a { 
-  color: #775849;
+  color: #292929;
 }
 
 input::placeholder, textarea::placeholder{
@@ -68,29 +67,33 @@ button{
   letter-spacing: 1px;
   font-size: 18px;
   color: whitesmoke;
-
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+  
 }
 .classic {
-  border: #775849 1px solid;
-  background-color: #775849;
+  border:  #292929 1px solid;
+  background-color:  #292929;
 }
 .classic a {
   color: whitesmoke;
 }
 
 .classic-singular {
-  border: #775849 1px solid;
+  border:  #292929 1px solid;
   background-color: whitesmoke;
   
 }
 .classic-singular a{
-  color: #775849;
+  color: #292929;
 }
 .classic-singular:hover a{
   color: whitesmoke;
 }
 .classic-singular:hover {
-  background-color: #775849;
+  background-color:  #292929;
 }
 .alternate {
   border: none;
@@ -119,15 +122,21 @@ button{
   padding: 10px 40px;
   z-index: 999;
   position: sticky;
-  background-color: #ebdacc;
   top: 0;
   left: 0;
 }
 
 #header .logo {
-  margin-top: 10px;
+  font-family: 'Voga', sans-serif;
+  letter-spacing: 10px;
+  font-size: 100px;
+  margin-left: 30px;
+ 
+ 
 }
-
+#header li {
+  list-style: none;
+}
 #navbar {
   display: flex;
   align-items: center;
@@ -147,17 +156,12 @@ button{
   transition: 0.3s ease;
 }
 
-#navbar li a:hover,
-#navbar li a.active {
-  color: #dd8470;
-}
-
 #navbar li a.active::after,
 #navbar li a:hover::after {
   content: "";
   width: 30%;
   height: 2px;
-  background: #dd8470;
+  background: #292929;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -166,7 +170,7 @@ button{
 /* --------------------------->    HOME */
 
 #hero {
-  background: url("images/hero 2.png") no-repeat center center;
+  background: url("images/") no-repeat center center;
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -186,25 +190,21 @@ button{
   flex-direction: column;
 }
 
-#hero .classic {
-  background-color: #dd8470;
-  border: 1px solid #dd8470;;
-}
-
 #hero h4 {
   padding-bottom: 15px;
 }
 
-#hero h1 {
-  color: #dd8470;
-}
 
-/* --------------------------->    HOME SUMMER  */
+/* --------------------------->    SUMMER  */
 #summer {
   display: flex;
   justify-content: center;
 }
-
+#summer img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
 .cont-global {
   display: flex;
   justify-content: end;
@@ -215,7 +215,14 @@ button{
   bottom: 40px;
   position: absolute;
 }
-
+.cont-global:hover {
+  transform: scale(0.98);
+  transition: 0.1s;
+}
+.cont1:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
 .cont1 button {
   display: block;
   color: whitesmoke;
@@ -235,13 +242,20 @@ button{
 #products {
   text-align: center;
 }
-
+#products img, #more img, #bags img, #acces img, #about img, #contact img{
+  opacity: .95;
+}
 #products img:hover {
   cursor: pointer;
 }
 
 #products .product {
   margin: 20px;
+}
+#products .product:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  
 }
 
 span {
@@ -260,14 +274,28 @@ span {
 #prodetails {
   display: flex;
 }
-
+#prodetails .photos{
+  display: grid;
+  max-width: fit-content;
+  grid-template-columns: 3fr 1fr;
+}
+.single-mat-image img{
+  width: 1500px;
+}
 .small-img {
-  width: 100%;
+  opacity: 0.5;
   margin: auto 5px auto;
 }
-
+.small-img:hover{
+  opacity: 0.9;
+}
 .single-mat-details {
   text-align: justify;
+}
+#prodetails img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 #prodetails .single-mat-details select {
@@ -315,11 +343,15 @@ select:focus {
   position: relative;
   margin: 10px;
 }
-
+#more .more-products:hover, 
+#acces img:hover, #bags img:hover{
+  transform: scale(1.03);
+  transition: 0.3s;
+}
 .more-products h2 {
   position: absolute;
   letter-spacing: 4px;
-  color: #788d6d;
+  color: whitesmoke;
 }
 
 #more .btn {
@@ -327,7 +359,7 @@ select:focus {
   position: absolute;
 }
 #more a:hover {
-  color:  #788d6d;
+  color: whitesmoke;
 }
 
 /* --------------------------->    ACCESS PAGE  */
@@ -367,6 +399,7 @@ select:focus {
   align-self: end;
   margin-bottom: 20px;
 }
+
 /* --------------------------->    BAGS PAGE  */
 #bags .image-grid {
   align-self: center;
@@ -406,7 +439,11 @@ select:focus {
   position: relative;
   justify-content: center;
 }
-
+#next img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
 #next button {
   position: absolute;
   align-self: end;
@@ -479,14 +516,9 @@ select:focus {
   font-size: 12px;
   margin-bottom: 10px ;
 }
-#contact-details .details h4,
-#form-details .details h4{
+#contact-details .details h4{
   letter-spacing: 2px;
   margin-top: 5px;
-}
-#contact-details .details h3{
- font-size: 18px;
- padding-bottom: 15px;
 }
 #contact-details .details li{
  list-style: none;
@@ -559,83 +591,71 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #dd8470;
+  background: rgba(110, 164, 221, 0.73);
 }
 
 /* --------------------------->    NEWSLETTER BANNER */
 
-#banner-newsletter {
-  color: #764b36;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background: #788d6d;
-  padding: 40px 70px 40px;
+#banner-newsletter  {
+  margin-top: 40px;
+  text-align: center;
 }
-
 #banner-newsletter input {
   height: 6vh;
   padding: 0 20px;
   font-size: 14px;
   width: 100%;
   outline: none;
-  border: none;
+  border:none;
+  border-bottom: #775849 1px solid;
 }
 
 #banner-newsletter .form {
+  margin: 0 auto;
   display: flex;
   width: 30%;
 }
 
 #banner-newsletter button {
+  margin-left: 10px;
   white-space: nowrap;
 }
 /* --------------------------->    FOOTER */
 
 footer {
-  background-color: #ebdacc;
   margin-top: 40px;
-}
 
-footer i {
-  font-size: 22px;
-  margin-right: 8px;
-  margin-top: 10px;
 }
-
-footer .links {
-  margin-top: 20px;
+footer .links{
   display: flex;
   justify-content: space-between;
 }
-
+footer .columns {
+  display: flex;
+}
+footer .col{
+  margin-left: 25px;
+}
 footer .col p {
   margin-top: 6px;
-  font-size: 17px;
-}
-
-footer .col h4 {
-  margin-bottom: 10px;
-}
-
-.follow {
-  margin-top: 20px;
-}
-
-footer h6 {
-  margin-bottom: 5px;
+  font-size: 15px;
 }
 
 footer .col a {
-  font-size: 18px;
+  font-size: 15px;
   display: block;
   text-decoration: none;
   margin-bottom: 15px;
 }
 
+#social-media i {
+  display: block;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
 footer .copyright p {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   margin-top: 40px;
 }

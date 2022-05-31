@@ -1,4 +1,4 @@
-// SINGULAR IMAGES
+// SINGULAR PRODUCT PAGE IMAGES
 let MainImg=document.getElementById("MainImg")
 let smallImg=document.getElementsByClassName("small-img")
 
