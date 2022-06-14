@@ -30,51 +30,47 @@
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="contact.html">CONTACT</a></li>
           <li>
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <a href="shop.html"><i class="far fa-shopping-bag"></i></a>
           </li>
         </ul>
       </div>
     </section>
-    <section id="prodetails" class="section-p1">
+    <section id="prodetails" class="section-p1 section-m2">
       <div class="photos">
-     
-      <div class="single-mat-image">
-        <img
-          src="images/products/product6-a.png"
-          alt=""
-          id="MainImg"
-        />
-      </div>
-      <div class="small-img-group">
-        <div>
-          <img src="images/products/product6-b.png" class="small-img" alt="" />
+        <div class="single-mat-image">
+          <img
+            src="images/products/product6-a.png"
+            alt=""
+          />
         </div>
-        <div>
-          <img src="images/products/product6-c.png" class="small-img" alt="" />
+        <div class="small-img-group">
+            <img src="images/products/product6-a.png" class="active"   alt="" />    
+            <img src="images/products/product6-b.png"  alt="" />
+            <img src="images/products/product6-c.png" alt="" />
+          </div>
         </div>
-        <div>
-          <img src="images/products/product6-a.png" class="small-img" alt="" />
-        </div>
-      </div>
-      </div>
       <div class="single-mat-details section-p1">
         <h2>Item</h2>
         <h4>22€</h4>
-        <select>
-          <option>Select Size</option>
-          <option>XL</option>
-          <option>XXL</option>
-          <option>Small</option>
-          <option>Large</option>
-        </select>
-        <input type="number" value="1" />
+       
+          <input type="radio" name="size" value="s" checked hidden id="s-size">
+          <label for="s-size" class="size-radio-btn check">s</label>
+          <input type="radio" name="size" value="m" hidden id="m-size">
+          <label for="m-size" class="size-radio-btn">m</label>
+          <input type="radio" name="size" value="l" hidden id="l-size">
+          <label for="l-size" class="size-radio-btn">l</label>
+          <input type="radio" name="size" value="xl" hidden id="xl-size">
+          <label for="xl-size" class="size-radio-btn">xl</label>
+          <input type="radio" name="size" value="xxl" hidden id="xxl-size">
+          <label for="xxl-size" class="size-radio-btn">xxl</label>
+       
         <button class="classic">Add To Cart</button>
-        <button class="classic-singular"><a href="shop.html">SHOP NOW</a></button>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi, sunt architecto aspernatur asperiores reiciendis, totam deserunt provident maxime neque, voluptates voluptatibus vitae expedita quos perspiciatis omnis obcaecati quod? Est.
         </p>
       </div>
     </section>
+   
     <section id="banner-newsletter">
       <div class="newstext">
         <p>Sign Up for newsletter</p>
@@ -85,7 +81,7 @@
       </div>
     </section>
     <section id="next" class="section-m1 section-p1">
-      <img src="images/products/next.png" width="1305" alt="" />
+      <img src="images/products/next.png"  alt="" />
       <button class="alternate">WHAT'S NEXT?</button>
     </section>
     <footer id="footer" class="section-p1">
